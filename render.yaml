@@ -1,0 +1,8 @@
+services:
+  - type: cron
+    name: my-cron-job
+    env: node
+    region: frankfurt
+    buildCommand: npm install
+    schedule: "0 * * * *" # Har soatda bir marta
+    startCommand: "node cron.js"
